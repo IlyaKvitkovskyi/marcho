@@ -942,8 +942,31 @@
     justify-content: space-between;
     padding: 16px 20px;
   }
-
 }
+
+.filter-popular {
+  &__label {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-popular__checkbox {
+      background-color: $accent;
+      border-color: $accent;
+      color: #fff;
+    }
+  }
+  &__checkbox {
+    border: 1px solid $default;
+    padding: 10px 20px;
+  }
+}
+
+
 
 
 
