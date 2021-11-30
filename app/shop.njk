@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="css/shop.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
+  
   <body>
-    <!-- Header -->
     {% include ('app/module/_header/_header.html') %}
-    <!-- /.Header -->
-
-    <!-- Main -->
+  
     <main class="main">
-      <!-- Top -->
+    
       {% include ('app/module/_top/_top.html') %}
-      <!-- /.Top -->
-
-      <!-- Shop -->
+     
       <section class="shop">
         <div class="container">
           <div class="shop__inner">
+            <button class="shop__filter-btn">
+              
+            </button>
             <div class="shop__filters filter">
               <div class="filter-search filter__item">
                 <h3 class="filter__title">Search</h3>
@@ -850,13 +849,9 @@
           </div>
         </div>
       </section>
-      <!-- /.Shop -->
     </main>
-    <!-- /.Main -->
-
-    <!-- Footer -->
+   
     {% include ('app/module/_footer/_footer.html') %}
-    <!-- /.Footer -->
 
     <script src="js/main.min.js"></script>
   </body>
