@@ -3,7 +3,7 @@ $(function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
 
-  $('.shop__filter-btn').on('click', function() {
+  $('.shop__filter-btn').on('click', function () {
     $('.shop__filters').slideToggle();
   });
 
@@ -37,6 +37,14 @@ $(function () {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1051,
+        settings: {
+          draggable: true,
+        },
+      },
+    ],
   });
 
   $('.shop-content__filter-btn').on('click', function () {
