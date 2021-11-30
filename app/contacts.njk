@@ -6,27 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marcho</title>
     <link rel="stylesheet" href="css/contacts.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <!-- Header -->
     {% include ('app/module/_header/_header.html') %}
-    <!-- /.Header -->
 
-    <!-- Main -->
     <main class="main">
-      <!-- Top -->
+      
       {% include ('app/module/_top/_top.html') %}
-      <!-- /.Top -->
 
-      <!-- Map -->
       <section class="map">
         <div class="container">
           <div id="map"></div>
         </div>
       </section>
-      <!-- /.Map -->
-
-      <!-- Contact -->
+      
       <section class="contact">
         <div class="container">
           <div class="contact__inner">
@@ -65,13 +59,9 @@
           </div>
         </div>
       </section>
-      <!-- /.Contact -->
     </main>
-    <!-- /.Main -->
-
-    <!-- Footer -->
+ 
     {% include ('app/module/_footer/_footer.html') %}
-    <!-- /.Footer -->
 
     <script
       src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
